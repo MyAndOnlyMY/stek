@@ -1,11 +1,16 @@
 import Stack
 
 stack = Stack.Stack()
-_str = input()
+_str_f = input()
+_str = ""
 not_emp = True
 
 br_open = "("
 br_close = ")"
+
+for i in _str_f:
+    if i == br_open or i == br_close:
+        _str += i
 
 for i in _str:
     if i == br_open:
